@@ -1,0 +1,79 @@
+.ban-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    border-radius: 25px;
+    background-image: url('../assests/plate.webp');
+    height: 260px;
+    max-width: 100%;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+    box-sizing: border-box;
+    /* Include padding in width/height calculations */
+}
+
+
+
+.ban-txt {
+    color: whitesmoke;
+    /* Updated text color for better contrast */
+    margin-bottom: 20px;
+    /* Add spacing below the text */
+}
+
+.ban-txt h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.ban-txt h3 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.ban-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Add spacing between input and button */
+}
+
+.ban-inp {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 250px;
+    /* Adjust the width of the input */
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+.ban-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff6b6b, #ff8c8c);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ban-btn:hover {
+    background: linear-gradient(to right, #ff8c8c, #ff6b6b);
+}

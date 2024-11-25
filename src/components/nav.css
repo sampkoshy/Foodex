@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 25px;
+  max-width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+/* Updated search-bar styles in navbar.css */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 20px;
+  flex-grow: 1;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+  color: #ff6b6b;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons i {
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ff6b6b, #ff8c8c);
+  color: white;
+  cursor: pointer;
+}
