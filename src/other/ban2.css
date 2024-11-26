@@ -1,0 +1,46 @@
+.ban2-container{
+  background-color: whitesmoke;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
+
+
+.ban2-left {
+    text-align: center;
+    /* padding: 40px 20px; */
+   
+    margin: 0 auto;
+  }
+  
+  .ban2-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ban2-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .ban2-mid img {
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    max-height: 66%;
+  }
+  .ban2-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+
+  

@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import FoodSection from './other/FoodSection'
 import Midbanner from './other/Midbanner'
 import Ban1 from './components/Ban1'
+import Ban2 from './other/Ban2'
 
 
 const App = () => {
@@ -17,8 +18,10 @@ const App = () => {
       <Navbar/></div>
 
       <div className='mn-sec'> <Card1/></div>
+      <Ban2/>
       <Section/>
       <Ban1/>
+      
       <Midbanner/>
       <FoodSection/>
       <Banner/>
