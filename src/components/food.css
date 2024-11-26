@@ -1,11 +1,17 @@
 /* foodCard.css */
 .food-card12 {
   max-width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; */
+}
+
+.food-card-container {
+  display: flex;
+  gap: 26px;
+  padding: 30px;
 }
 
 .food-card:hover {
@@ -14,11 +20,13 @@
 
 .food-card-image {
   position: relative;
+
 }
 
 .food-card-image img {
   max-width: 100%;
-  height: auto;
+max-height: 290px;
+
   border-radius: 25px;
   border-bottom: 1px solid #f1f1f1;
 }

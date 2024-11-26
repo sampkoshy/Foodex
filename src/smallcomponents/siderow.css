@@ -1,0 +1,39 @@
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 10px;
+
+    gap: 15px;
+  }
+  .sideimg{
+    background-color: #fff;
+    border-radius: 20px;
+    /* padding: 20px; */
+
+  }
+  
+  .feature img {
+    width: 100px;
+    /* padding: 20px; */
+    /* margin-left: 10px; */
+    object-fit: cover;
+
+    height: 100px;
+  }
+  
+  .feature h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 5px auto;
+  }
+  
+  .feature p {
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+  }

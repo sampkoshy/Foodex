@@ -5,6 +5,10 @@ import Card1 from './components/Card1'
 import Section from './components/Section'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
+import FoodSection from './other/FoodSection'
+import Midbanner from './other/Midbanner'
+import Ban1 from './components/Ban1'
+
 
 const App = () => {
   return (
@@ -14,9 +18,13 @@ const App = () => {
 
       <div className='mn-sec'> <Card1/></div>
       <Section/>
+      <Ban1/>
+      <Midbanner/>
+      <FoodSection/>
       <Banner/>
+
       <Footer/>
-      
+     
       </>
   )
 }

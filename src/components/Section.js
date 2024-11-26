@@ -3,6 +3,11 @@ import './section.css';
 import FoodCard from './FoodCard';
 
 const Section = () => {
+
+
+
+
+
   return (
     <div className="sec-main">
       <h1>Our Top Meals</h1>
@@ -19,10 +24,7 @@ const Section = () => {
       <div className="food-card-div">
     <FoodCard />
     <FoodCard />
-    <FoodCard />
-    <FoodCard />
-    <FoodCard /> 
-    <FoodCard />
+   
   </div>
     </div>
   );

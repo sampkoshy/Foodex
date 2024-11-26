@@ -1,0 +1,90 @@
+/* Banner container */
+.banner-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 40px 20px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assests/plate.webp');
+    height: 260px;
+    max-width: 80%;
+    margin: 50px auto;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  /* Overlay to darken the background */
+  .banner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+  }
+  
+  /* Content inside the banner */
+  .banner-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .banner-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .order-button {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-button:hover {
+    background-color: #ff5722;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .banner-container {
+      padding: 20px 10px;
+      height: auto;
+      max-width: 90%;
+    }
+  
+    .banner-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .banner-content p {
+      font-size: 1rem;
+    }
+  
+    .order-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

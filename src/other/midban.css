@@ -1,0 +1,46 @@
+/* Main Container */
+.mid-main {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.mid-main h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mid-main p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Flex container */
+.mid-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* Left Section */
+.midsec-left {
+    flex: 1;
+}
+
+.chef-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Right Section */
+.midsec-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

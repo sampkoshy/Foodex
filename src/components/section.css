@@ -1,18 +1,17 @@
 .sec-main {
     text-align: center;
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
     border-radius: 25px;
     padding: 20px;
     margin: 0 auto;
     max-width: 100%;
-    overflow-x: hidden;
-    /* Prevents horizontal scrolling */
+
 }
 
 .sec-main h1 {
     text-transform: uppercase;
     color: #333;
-    /* Neutral text color for accessibility */
+
 }
 
 .sec-main p {
@@ -73,15 +72,6 @@
 }
 
 .food-card-div {
-    display: grid;
-    /* Use CSS Grid for layout */
-    grid-template-columns: repeat(3, 1fr);
-    /* Always show 3 columns */
-    gap: 20px;
-    /* Add space between cards */
-    padding: 20px;
-    /* Padding around the grid */
-    border-radius: 20px;
-    /* Rounded corners for the container */
-
+    margin-top: 20px;
+    background-color: whitesmoke;
 }

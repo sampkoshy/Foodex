@@ -14,14 +14,14 @@ const Card1 = () => {
         </p>
         <div className="promo-button-container">
           <button className="order-button">
-            <i className="fas fa-plus-circle"></i> Order Now
+         Order Now
           </button>
           <span className="discount-text">10-50% OFF</span>
         </div>
       </div>
       <div className="promo-image">
         <img
-          src={plate}// Replace with the actual image source
+          src={plate}
           alt="Vegetable Pot"
         />
       </div>
