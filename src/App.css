@@ -6,3 +6,8 @@
 body {
     overflow-x: hidden;
 }
+.poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }

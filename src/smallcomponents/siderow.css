@@ -1,39 +1,83 @@
 .feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing */
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #ddd; /* Slightly darker for better visibility */
+  padding: 20px; /* Increased padding for better spacing */
+  gap: 20px; /* Uniform spacing between elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
 
+.sideimg {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden; /* Ensures image doesn't overflow rounded corners */
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px; /* Adds subtle rounding for images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow to images */
+}
+
+.feature h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 10px; /* Ensures spacing below the title */
+  color: #333; /* Darker text for better readability */
+}
+
+.feature p {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5; /* Improves readability of longer text */
+  color: #555; /* Subtle color for description text */
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+    align-items: center;
+    padding: 15px;
     gap: 15px;
   }
-  .sideimg{
-    background-color: #fff;
-    border-radius: 20px;
-    /* padding: 20px; */
 
-  }
-  
   .feature img {
-    width: 100px;
-    /* padding: 20px; */
-    /* margin-left: 10px; */
-    object-fit: cover;
+    width: 80px;
+    height: 80px; /* Slightly smaller image for compact screens */
+  }
 
-    height: 100px;
-  }
-  
   .feature h4 {
-    font-size: 1.5rem;
-    text-align: left;
-    margin: 5px auto;
+    font-size: 1.25rem;
   }
-  
+
   .feature p {
-    margin: 0;
-    text-align: left;
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem; /* Smaller text for mobile */
+    text-align: center; /* Center-align text for smaller screens */
   }
+}
+
+@media (max-width: 480px) {
+  .feature {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .feature img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .feature h4 {
+    font-size: 1.1rem;
+  }
+
+  .feature p {
+    font-size: 0.8rem;
+  }
+}

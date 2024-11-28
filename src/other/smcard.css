@@ -6,8 +6,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.2);
-    /* Light red shadow */
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.2); /* Light red shadow */
     margin: 10px auto;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -19,17 +18,12 @@
 .smimg-img {
     border: 1px solid grey;
     border-radius: 20px;
-    
-
 }
 
 .sm-img {
-padding: 10px;
-
-
+    padding: 10px;
     width: 120px;
     border-radius: 25px;
-
     margin-right: 15px;
 }
 
@@ -37,7 +31,6 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex: 1; */
 }
 
 .sm-txt {
@@ -66,4 +59,39 @@ padding: 10px;
     margin: 0;
     text-align: left;
     line-height: 1.4;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .sm-main {
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;     /* Center content */
+        gap: 10px;               /* Reduce gap */
+        padding: 10px;           /* Reduce padding for smaller screens */
+    }
+
+    .sm-img {
+        width: 100%;  /* Make image take full width on smaller screens */
+        height: auto;
+        border-radius: 15px;  /* Adjust radius for better look on small screens */
+        margin-right: 0;      /* Remove margin */
+    }
+
+    .sm-txt {
+        justify-content: space-between; /* Keep space between title and price */
+        width: 100%;  /* Ensure it spans the full width of the container */
+    }
+
+    .sm-txt h3,
+    .sm-txt h4 {
+        font-size: 16px;  /* Adjust font size for smaller screens */
+    }
+
+    .sm-content p {
+        font-size: 12px; /* Smaller font size for description */
+    }
+
+    .sm-img img {
+        object-fit: cover;  /* Ensure image scales nicely */
+    }
 }

@@ -1,90 +1,74 @@
-/* Banner container */
+/* Banner container styles */
 .banner-container {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    padding: 40px 20px;
-    border-radius: 25px;
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../assests/plate.webp');
-    height: 260px;
-    max-width: 80%;
-    margin: 50px auto;
-    z-index: 1;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('../assests/plate.webp'); 
+  background-size: cover; /* Cover the container without distortion */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  height: 300px; /* Adjust height as needed */
+  padding: 20px;
+  max-width: 90%;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Banner content styles */
+.banner-content {
+  color: #fff; /* White text for contrast */
+  max-width: 600px; /* Limit content width */
+  z-index: 1; /* Ensure content appears above the background */
+}
+
+.banner-content h1 {
+  font-size: 2.5rem; /* Large headline */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 1.2rem; /* Slightly smaller description */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Improve readability */
+}
+
+
+.order-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ff6b6b, #ff8c8c);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-button:hover {
+  background: linear-gradient(to right, #ff8c8c, #ff6b6b); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+  .banner-container {
+    /* height: auto; Adjust height for smaller screens */
+    padding: 30px 15px;
   }
-  
-  /* Overlay to darken the background */
-  .banner-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    z-index: 1;
-  }
-  
-  /* Content inside the banner */
-  .banner-content {
-    position: relative;
-    z-index: 2;
-  }
-  
+
   .banner-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 2rem; /* Smaller font size */
   }
-  
+
   .banner-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  
-  .order-button {
-    background-color: #ff7043;
-    color: white;
-    padding: 10px 20px;
     font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-  
-  .order-button:hover {
-    background-color: #ff5722;
+
+  .order-button {
+    font-size: 0.9rem;
+    padding: 10px 20px; /* Adjust button padding */
   }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .banner-container {
-      padding: 20px 10px;
-      height: auto;
-      max-width: 90%;
-    }
-  
-    .banner-content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .banner-content p {
-      font-size: 1rem;
-    }
-  
-    .order-button {
-      padding: 8px 15px;
-      font-size: 0.9rem;
-    }
-  }
-  
+}

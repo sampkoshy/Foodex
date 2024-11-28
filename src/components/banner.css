@@ -1,79 +1,90 @@
-.ban-main {
+
+.banner-background {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('../assests/plate.webp'); 
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-size: cover;
-
-
-    border-radius: 25px;
-    background-image: url('../assests/plate.webp');
-    height: 260px;
-    max-width: 100%;
+    background-position: center;
+    height: 300px; 
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 90%;
     padding: 20px;
-    max-width: 80%;
-    margin: 50px auto;
-    z-index: 1;
-    box-sizing: border-box;
-    /* Include padding in width/height calculations */
-}
-
-
-
-.ban-txt {
-    color: whitesmoke;
-    /* Updated text color for better contrast */
-    margin-bottom: 20px;
-    /* Add spacing below the text */
-}
-
-.ban-txt h2 {
-    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  .banner-content {
+    color: #fff; /* White text for better contrast */
+    max-width: 600px; /* Limit content width for readability */
+  }
+  
+  .banner-content h2 {
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff;
-}
-
-.ban-txt h3 {
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #fff;
-}
-
-.ban-in {
+  }
+  
+  .banner-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Improve readability */
+  }
+  .banner-subscription {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    /* Add spacing between input and button */
-}
-
-.ban-inp {
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 8px 12px;
-    font-size: 14px;
-    width: 250px;
-    /* Adjust the width of the input */
-    box-sizing: border-box;
-    /* Include padding in width */
-}
-
-.ban-btn {
-    padding: 8px 16px;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+  }
+  
+  .banner-input {
+    width: 250px; /* Input field width */
+    padding: 10px 15px;
+    font-size: 1rem;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(to right, #ff6b6b, #ff8c8c);
-    color: white;
-    font-size: 14px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .banner-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff6b6b, #ff8c8c); /* Gradient background */
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.ban-btn:hover {
-    background: linear-gradient(to right, #ff8c8c, #ff6b6b);
-}
+    transition: all 0.3s ease;
+  }
+  
+  .banner-button:hover {
+    background: linear-gradient(to right, #ff8c8c, #ff6b6b); /* Hover effect */
+    transform: scale(1.05); /* Slight scaling */
+  }
+  @media (max-width: 768px) {
+    .banner-background {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 20px 15px;
+    }
+  
+    .banner-content h2 {
+      font-size: 1.5rem; /* Smaller font for headlines */
+    }
+  
+    .banner-content p {
+      font-size: 0.9rem; /* Adjust paragraph text size */
+    }
+  
+    .banner-input {
+      width: 200px; /* Reduce input size */
+      font-size: 0.9rem;
+    }
+  
+    .banner-button {
+      font-size: 0.9rem; /* Adjust button size */
+      padding: 8px 16px;
+    }
+  }
+  

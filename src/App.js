@@ -14,10 +14,10 @@ import Ban2 from './other/Ban2'
 const App = () => {
   return (
     <>
-    <div>
-      <Navbar/></div>
+    
+      <Navbar/>
 
-      <div className='mn-sec'> <Card1/></div>
+       <Card1/>
       <Ban2/>
       <Section/>
       <Ban1/>

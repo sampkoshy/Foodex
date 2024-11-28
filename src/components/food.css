@@ -1,4 +1,3 @@
-/* foodCard.css */
 .food-card12 {
   max-width: 100%;
   /* background-color: #fff; */
@@ -79,4 +78,67 @@ max-height: 290px;
 .food-card-description {
   font-size: 14px;
   color: #555;
+}
+
+
+/* Responsive Design */
+@media (max-width: 780px) {
+  .food-card-container {
+    gap: 16px;
+  }
+
+  .food-card12 {
+    width: 90%; /* Adapt card width for smaller screens */
+  }
+
+  .food-card-image img {
+    max-height: 180px; /* Slightly smaller for smaller devices */
+  }
+
+  .food-card-header h3 {
+    font-size: 16px;
+  }
+
+  .food-card-price {
+    font-size: 16px;
+  }
+
+  .food-card-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 740px) {
+  .food-card-container {
+    padding: 10px;
+    flex-direction: column;
+    
+
+
+
+  }
+
+  .food-card12 {
+    width: 100%;
+  }
+
+  .food-card-image img {
+    /* max-height: 150px; */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .food-card-header h3 {
+    font-size: 14px;
+  }
+
+  .food-card-price {
+    font-size: 14px;
+  }
+
+  .food-card-description {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
 }

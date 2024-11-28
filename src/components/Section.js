@@ -23,7 +23,7 @@ const Section = () => {
       </div>
       <div className="food-card-div">
     <FoodCard />
-    <FoodCard />
+    
    
   </div>
     </div>
