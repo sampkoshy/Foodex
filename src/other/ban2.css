@@ -42,13 +42,24 @@
   /* flex-wrap: wrap; */
   padding: 20px; /* Inner padding for spacing */
 }
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .ban2-content {
     flex-direction: column; /* Stack content vertically */
     gap: 30px; /* Increased spacing for vertical layout */
   }
+
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 900px) {
+  .ban2-content {
+    flex-direction: column; /* Stack content vertically */
+    gap: 30px; /* Increased spacing for vertical layout */
+  }
+  .ban2-left{
+    flex-direction: row-reverse;
+  }
+  
 
   .ban2-title {
     font-size: 2rem; /* Adjusted for smaller screens */
