@@ -43,7 +43,7 @@
 
 .chef-image {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 15px; /* Subtle rounding for the image */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth to the image */
     object-fit: cover;

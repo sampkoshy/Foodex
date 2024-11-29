@@ -1,19 +1,20 @@
 .feature {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures even spacing */
+
   background-color: #fff;
   border-radius: 25px;
   border: 1px solid #ddd; /* Slightly darker for better visibility */
   padding: 20px; /* Increased padding for better spacing */
   gap: 20px; /* Uniform spacing between elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+
 }
 
 .sideimg {
   background-color: #fff;
   border-radius: 20px;
-  overflow: hidden; /* Ensures image doesn't overflow rounded corners */
+  width: 100%;
+  overflow: hidden; 
 }
 
 .feature img {
@@ -27,7 +28,7 @@
 .feature h4 {
   font-size: 1.5rem;
   text-align: left;
-  margin-bottom: 10px; /* Ensures spacing below the title */
+  /* margin-bottom: 10px; Ensures spacing below the title */
   color: #333; /* Darker text for better readability */
 }
 
@@ -54,6 +55,9 @@
 
   .feature h4 {
     font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
   }
 
   .feature p {

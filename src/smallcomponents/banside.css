@@ -51,6 +51,16 @@
         gap: 12px;
         flex-direction: row;
     }
+    @media (max-width: 350px) {
+        .row-rev {
+            flex-direction: column; /* Stack elements vertically */
+            text-align: center; /* Center align text */
+            padding: 10px; /* Reduce padding for smaller space */
+            gap: 8px;
+             flex-direction: column-reverse;
+           text-align: justify;
+        }
+    }
 }
 
 
