@@ -55,10 +55,16 @@
   margin-right: 8px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+.nav-item {
+  color: #ff8c8c;
+    background-color: #fff; 
+    padding: 5px;
+    border-radius: 5px;
+}
 
 .search-button:hover {
-  color: #ff8c8c; /* Lightens the color */
-  transform: scale(1.2); /* Slightly enlarges on hover */
+  color: #ff8c8c; 
+  transform: scale(1.2); 
 }
 
 
@@ -123,7 +129,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   
   .side-stack{
